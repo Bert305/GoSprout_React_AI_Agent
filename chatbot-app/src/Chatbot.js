@@ -6,6 +6,7 @@ import logo from './GoSprout_logo.jpg'; // Adjust the path to your logo image
 const Chatbot = () => {
     const [messages, setMessages] = useState([]); // Stores conversation history
     const [userMessage, setUserMessage] = useState(''); // Current user input
+    const [isVisible, setIsVisible] = useState(true); // Controls chatbot visibility
 
     const handleSendMessage = async () => {
         if (userMessage.trim() === '') return;
@@ -33,27 +34,38 @@ const Chatbot = () => {
         setMessages([]);
     };
 
+    const toggleVisibility = () => {
+        setIsVisible(!isVisible);
+    };
+
     return (
         <div className="chatbot-container">
-            <img src={logo} alt="Logo" className="chatbot-logo" /> {/* Add the logo here */}
-            <div className="chat-window">
-                {messages.map((msg, index) => (
-                    <div key={index} className={`chat-message ${msg.role}`}>
-                        <span>{msg.content}</span>
+            <button onClick={toggleVisibility} className='hide-bot'>
+                {isVisible ? 'Hide Chatbot' : 'Show Chatbot'}
+            </button>
+            {isVisible && (
+                <>
+                    <img src={logo} alt="Logo" className="chatbot-logo" /> {/* Add the logo here */}
+                    <div className="chat-window">
+                        {messages.map((msg, index) => (
+                            <div key={index} className={`chat-message ${msg.role}`}>
+                                <span>{msg.content}</span>
+                            </div>
+                        ))}
                     </div>
-                ))}
-            </div>
-            <div className="chat-input">
-                <input
-                    type="text"
-                    placeholder="Type your message..."
-                    value={userMessage}
-                    onChange={(e) => setUserMessage(e.target.value)}
-                    onKeyDown={(e) => e.key === 'Enter' && handleSendMessage()}
-                />
-                <button onClick={handleSendMessage}>Send</button>
-                <button onClick={handleRefreshChat}>Refresh</button>
-            </div>
+                    <div className="chat-input">
+                        <input
+                            type="text"
+                            placeholder="Type your message..."
+                            value={userMessage}
+                            onChange={(e) => setUserMessage(e.target.value)}
+                            onKeyDown={(e) => e.key === 'Enter' && handleSendMessage()}
+                        />
+                        <button onClick={handleSendMessage}>Send</button>
+                        <button onClick={handleRefreshChat}>Refresh</button>
+                    </div>
+                </>
+            )}
         </div>
     );
 };
