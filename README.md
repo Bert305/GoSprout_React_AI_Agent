@@ -44,7 +44,7 @@ Create a project for GoSprout to access OpenAI using React, Flask, and Python
 <p>OPENAI_API_KEY=YOUR API KEY</p>
 <p>ASSISTANT_ID=YOUR OPEN AI ASSISTANT ID</p>
 <p></p>
-<p>Run python app.py in the terminal to start server. Make sure to be in the proper directory</p>
+<p>Run $ python app.py in the terminal to start the server. Make sure to be in the proper directory</p>
 <p></p>
 <p></p>
 <p>Get started!!😎 </p>
