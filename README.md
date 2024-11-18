@@ -1,7 +1,7 @@
 # GoSprout_React_AI_Agent
 Create a project for GoSprout to access OpenAI using React, Flask, and Python
 
-
+<p><a href="https://docs.google.com/document/d/1mboEyI7G2VN7aSzwyYLBwfKlapUxRx0g4Ra_nT3dL1k/edit?usp=sharing">Google Doc Further Notes on setup</a></p>
 
 <p></p>
 <p><strong>Download Instructions and Prerequisites</strong></p>
