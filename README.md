@@ -26,6 +26,7 @@ Create a project for GoSprout to access OpenAI using React, Flask, and Python
 
 
 <p></p>
+<p><strong>Python Libraries</strong></p>
 <p>$ pip install beautifulsoup4 requests pandas</p>
 <p></p>
 <p>$ pip install openai --upgrade</p>
