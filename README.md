@@ -20,7 +20,6 @@ Create a project for GoSprout to access OpenAI using React, Flask, and Python
 <p></p>
 <p>Recommend to create a project folder first (can right-click and create a folder inside your desktop) to clone your GitHub repo into. Make sure to create the .venv inside the project folder first (VScode will create one for you once you start installing the Python libraries in the terminal assuming you downloaded Python already), then continue installing the other Python libraries once the .venv is created</p>
 <p>Next is to CD inside the Github repo project <strong>GoSprout_React_AI_Agent</strong> and get started</p>
-<p><strong>The goal is to avoid pushing the .venv Python libraries into the project.</strong></p>
 
 ![image](https://github.com/user-attachments/assets/6c2f0dc9-8f33-409d-805e-d99cd27c59ba)
 
