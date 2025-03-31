@@ -16,14 +16,8 @@ Create a project for GoSprout to access OpenAI using React, Flask, and Python
 <p></p>
 <p><strong>Instructions for terminal to create your .venv for Python libraries</strong></p>
 <p></p>
-<p><strong>Note:</strong> You will be asked to install these Python Libraries on your IDE (VScode) instead of globally to avoid conflicts. Please say allow and pick a version to create a .venv for your Python Libraries</p>
+<p><strong>Note:</strong> You will be asked to install the Python Libraries below in the terminal of your IDE (VScode) instead of globally to avoid conflicts. Please say allow and pick a version to create a .venv for your Python Libraries</p>
 <p></p>
-<p>Recommend to create a project folder first (can right-click and create a folder inside your desktop) to clone your GitHub repo into. Make sure to create the .venv inside the project folder first (VScode will create one for you once you start installing the Python libraries in the terminal assuming you downloaded Python already), then continue installing the other Python libraries once the .venv is created</p>
-<p>Next is to CD inside the Github repo project <strong>GoSprout_React_AI_Agent</strong> and get started</p>
-
-![image](https://github.com/user-attachments/assets/6c2f0dc9-8f33-409d-805e-d99cd27c59ba)
-
-
 <p></p>
 <p><strong>Python Libraries</strong></p>
 <p>$ pip install beautifulsoup4 requests pandas</p>
