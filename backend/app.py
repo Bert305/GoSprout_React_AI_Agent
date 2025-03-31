@@ -7,8 +7,8 @@ from dotenv import load_dotenv
 
 # Load environment variables
 load_dotenv()
-OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
-ASSISTANT_ID = os.getenv('ASSISTANT_ID')
+OPENAI_API_KEY = os.getenv('OPENAI_API_KEY') # You can hardcode your OpenAI API key here for testing, but it's recommended to use environment variables for security reasons.
+ASSISTANT_ID = os.getenv('ASSISTANT_ID') # You can hardcode your Assistant ID here for testing, but it's recommended to use environment variables for security reasons.
 
 # Initialize OpenAI client
 client = OpenAI(api_key=OPENAI_API_KEY)
